@@ -1,4 +1,4 @@
-module Example
+module Function_Test
 
 export func
 

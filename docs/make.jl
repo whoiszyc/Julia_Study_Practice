@@ -1,4 +1,4 @@
-push!(LOAD_PATH,"/Users/whoiszyc/Github/Julia_Study_Practice/src")
+push!(LOAD_PATH,"../src/")
 
 using Documenter
 using Function_Test
