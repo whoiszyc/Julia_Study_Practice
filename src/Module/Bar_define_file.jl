@@ -1,8 +1,8 @@
 module Bar
 
-export g
+export f
 
-function g(x,y)
+function f(x,y)
     return x+y
 end
 
