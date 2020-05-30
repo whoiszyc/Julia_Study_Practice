@@ -1,5 +1,5 @@
 using Plots
-# gr()
+gr()
 
 # # -------------example 1-------------------------
 # 10 data points in 4 series
