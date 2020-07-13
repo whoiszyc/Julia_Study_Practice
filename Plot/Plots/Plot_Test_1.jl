@@ -1,5 +1,6 @@
 using Plots
-gr()
+Plots.PyPlotBackend()
+
 
 # # -------------example 1-------------------------
 # 10 data points in 4 series
@@ -16,17 +17,16 @@ markershapes = [:circle, :star5]
 markercolors = [:green :orange :black :purple
                 :red   :yellow :brown :white]
 
-plot(xs, data, label = labels, shape = markershapes, color = markercolors,
+Plots.plot(xs, data, label = labels, shape = markershapes, color = markercolors,
      markersize = 10)
 
-
 # ---------------example 2-------------------------
-# plot(0:0.5:10, xaxis = ("my label", (0,10), 0:0.5:10, :log, :flip, font(8)))
+Plots.plot(0:0.5:10, xaxis = ("my label", (0,10), 0:0.5:10, :log, :flip, font(8)))
 
-# plot(0:1:10, 0:10:100, xlabel = "my label",
-#              # xlims = (0,10),
-#              xticks = 0:20:200,
-#              # xflip = true,
-#              xtickfont = font(8))
-#
-# savefig("zyc.png")
+Plots.plot(0:1:10, 0:10:100, xlabel = "my label",
+             # xlims = (0,10),
+             xticks = 0:20:200,
+             # xflip = true,
+             xtickfont = font(8))
+
+Plots.savefig("Plot/Plots/line.png")
